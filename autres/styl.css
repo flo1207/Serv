@@ -21,7 +21,7 @@ nav ul{
 }
 nav ul li {
 	float: left;
-	width: 33.3333333%;
+	width: 50%;
 	height: 40px;
 	background-color: teal;
 	line-height: 40px;
@@ -31,6 +31,8 @@ nav ul li {
 	color: black;
 	position:relative;
 	z-index:51;
+  border-radius: 20px;
+
 	}
 
 nav ul li a{
@@ -39,8 +41,10 @@ nav ul li a{
     color: white;
     padding-bottom: 0px;
     text-decoration: none;
+    border-radius: 20px;
+
 	}
-	
+
 nav ul li a:hover{
 	background-color: grey;
 }
@@ -52,19 +56,18 @@ nav ul li ul li {
 
 nav ul li:hover ul li{
 	display:block;
-
 }
 
 h1{
 	color: teal;
 	text-decoration: underline;
   }
-  
-h2{ 
+
+h2{
 	color: MintCream;
   }
 
-h3{ 
+h3{
 	color: black;
 }
 
@@ -98,8 +101,8 @@ td{
 
 .imageban{
     height: 245px;
-    border-radius: 5px;
-    background: url("../images/bann.jpg") no-repeat;
+    border-radius: 20px;
+    background: url("../images/bann.png") no-repeat;
     position: relative;
     box-shadow: 4px 4px 4px #1c1a19;
     margin-bottom: 0px;
@@ -110,7 +113,7 @@ td{
 	float:left;
 	margin-left: 50px;
 	margin-right: 0px;
-	margin-top: 30px;	
+	margin-top: 30px;
 }
 
 .piedD {
