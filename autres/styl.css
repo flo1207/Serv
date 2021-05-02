@@ -1,4 +1,4 @@
-body
+<body
 {
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
@@ -26,8 +26,8 @@ nav ul li {
 	background-color: teal;
 	line-height: 40px;
 	text-align:center;
-	font-family: "Georgia ";
-	font-weight:bold;
+	font-family: "Playball ";
+	font-weight:500;
 	color: black;
 	position:relative;
 	z-index:51;
