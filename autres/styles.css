@@ -60,3 +60,61 @@ button {
 button:hover {
     background-color: rgba(0,136,169,0.8);
 }
+
+
+
+
+
+nav a:hover
+{
+    color: white;
+    border-bottom: 50px solid
+	list-style-type: none;
+	margin-right: 15px;
+
+}
+
+nav ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+nav ul li {
+	float: left;
+	width: 50%;
+	height: 40px;
+	background-color: teal;
+	line-height: 40px;
+	text-align:center;
+	font-family: "Playball ";
+	font-weight:500;
+	color: black;
+	position:relative;
+	z-index:51;
+  	border-radius: 20px;
+
+	}
+
+nav ul li a{
+	display: block;
+	font-size: 1.3em;
+    color: white;
+    padding-bottom: 0px;
+    text-decoration: none;
+    border-radius: 20px;
+
+	}
+
+nav ul li a:hover{
+	background-color: grey;
+}
+
+nav ul li ul li {
+	display: none;
+	width: 100%;
+}
+
+nav ul li:hover ul li{
+	display:block;
+}
