@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+:root {
+    --transition: all 0.3s ease 0s;
+}
+
+
 *{
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -11,20 +17,31 @@ html, body{
     overflow: auto;
 }
 
-body{
-    background:
-        url(../images/microsoft.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+body {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    margin:0;
+    padding:0;
+    background-size: 100% ;
+    width:100%;  
+    color:black;
 }
 
 
-h {
-    font-size: 140px;
-    font-family: "Playball", sans-serif;
-    margin-right: 350px;
-}
+body:before {
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+    background: url(../images/microsoft.jpg);
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    filter: blur(5px);
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+ }
 
 
 
@@ -35,25 +52,55 @@ li, a, button {
     color: #000000;
     text-decoration: none;
     text-align:center;
+}
 
+main {
+    height: 100%;
+    display: grid;
 }
 
 header{
+    margin: 50px ;
+}
+
+nav {
     display: flex;
     align-items: center;
-    padding: 20px 2%;
+    height: 120px;
 }
 
 .logo {
     cursor: pointer;
     margin-right: auto;
+    margin-left: auto;
     border-radius: 25px;
     height: 125px;
     width: 125px;
 }
 
+
+h {
+    font-size: 140px;
+    font-family: "Playball", sans-serif;
+    margin-right: 350px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+
 .nav_links{
+    margin-left: auto ;
     list-style: none;
+
+}
+    
+.nav_links a, .nav_links button {
+    font-weight: 400;
+    transition: var(--transition);
+        
 }
 
 .nav_links li {
@@ -84,18 +131,67 @@ header{
 
 }
 
+
 button {
-    margin-left: 100px;
+    margin-right: 50px;
     padding: 9px 25px;
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease 0s;
+    transition: var(--transition);
 }
 
 button:hover {
     background-color: rgba(0,136,169,0.8);
 }
+
+
+
+.new {
+    margin-left:120px ;
+    margin-right:120px ;
+    text-align: center;
+
+    background-color: #ffffff81;
+    align-self: center;
+    padding: 40px 0 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.news {
+    display: flex;
+    margin: 0 20px 40px 0px;
+
+}
+
+.news:nth-child(3) {
+    align-self: flex-start;
+}
+
+.news img {
+    height: 400px;
+    margin-right: 20px;
+}
+
+.news_info {
+    margin-top: 10px;
+}
+
+.news_top {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.news_bottom {
+    width: 180px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 
